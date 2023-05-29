@@ -1,0 +1,43 @@
+# Exclude the following files and directories
+excluded:
+  - Carthage
+  - Pods
+  - lucky-tryUITests/LuckyTryUITests.swift
+  - lucky-tryTests/LuckyTryTests.swift
+
+# Rules
+
+# Emit a warning if a line of code exceeds 120 characters
+line_length:
+  warning: 120
+  error: 200
+
+# Require identifiers to have at least 3 characters and no more than 40
+identifier_name:
+  min_length:
+    warning: 3
+    error: 2
+  max_length:
+    warning: 40
+    error: 50
+
+# Emit a warning if force casting is used
+force_cast:
+  severity: warning
+
+
+# Emit a warning if there is no new line at the end of the file
+trailing_newline:
+  severity: warning
+
+# Emit a warning if there are unused (ignored) function arguments
+unused_optional_binding:
+  severity: warning
+
+# Emit a warning if there are empty catch blocks
+empty_enum_arguments:
+  severity: warning
+
+# Emit a warning if there are multiple empty lines
+vertical_whitespace:
+  max_empty_lines: 1
