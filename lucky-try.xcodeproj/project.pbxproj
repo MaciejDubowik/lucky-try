@@ -14,6 +14,8 @@
 		0E13B9B62A23FA5300023D14 /* LuckyTryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13B9B52A23FA5300023D14 /* LuckyTryTests.swift */; };
 		0E13B9C02A23FA5300023D14 /* LuckyTryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13B9BF2A23FA5300023D14 /* LuckyTryUITests.swift */; };
 		0E13B9C22A23FA5300023D14 /* LuckyTryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13B9C12A23FA5300023D14 /* LuckyTryUITestsLaunchTests.swift */; };
+		0E13B9F72A2527BF00023D14 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13B9F62A2527BE00023D14 /* StartView.swift */; };
+		0E13B9F92A25298300023D14 /* HexColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13B9F82A25298300023D14 /* HexColorConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		0E13B9BB2A23FA5300023D14 /* lucky-tryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lucky-tryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E13B9BF2A23FA5300023D14 /* LuckyTryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTryUITests.swift; sourceTree = "<group>"; };
 		0E13B9C12A23FA5300023D14 /* LuckyTryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E13B9F62A2527BE00023D14 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		0E13B9F82A25298300023D14 /* HexColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		0E13B9DA2A25163E00023D14 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0E13B9F82A25298300023D14 /* HexColorConverter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 		0E13B9F32A25176F00023D14 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E13B9F62A2527BE00023D14 /* StartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -455,7 +461,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E13B9F72A2527BF00023D14 /* StartView.swift in Sources */,
 				0E13B9A72A23FA5100023D14 /* ContentView.swift in Sources */,
+				0E13B9F92A25298300023D14 /* HexColorConverter.swift in Sources */,
 				0E13B9A52A23FA5100023D14 /* LuckyTry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
