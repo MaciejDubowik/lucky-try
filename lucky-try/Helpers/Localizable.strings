@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  lucky-try
+
+  Created by Maciej Dubowik on 29/05/2023.
+  
+*/
+
+// Fonts
+"font.Lato.regular" = "Lato-Regular";
+"font.Lato.bold" = "Lato-Bold";
+"font.Lato.extraBold" = "Lato-ExtraBold";
+"font.Inter.bold" = "Inter-Bold";

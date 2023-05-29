@@ -9,7 +9,17 @@ import SwiftUI
 
 struct StartView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Hello World!")
+                .font(.custom(S.Font.Lato.regular, size: 17))
+            Text("Hello World")
+                .font(.custom(S.Font.Lato.bold, size: 17))
+            Text("Hello World")
+                .font(.custom(S.Font.Lato.extraBold, size: 17))
+            Text("Hello World!")
+                .font(.custom(S.Font.Inter.bold, size: 17))
+
+        }
     }
 }
 

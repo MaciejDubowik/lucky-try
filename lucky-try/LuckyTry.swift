@@ -9,9 +9,25 @@ import SwiftUI
 
 @main
 struct LuckyTry: App {
+
+    init(){
+        printFonts()
+    }
+
+    func printFonts() {
+        let fontFamily = UIFont.familyNames
+
+        for familyName in fontFamily {
+            print("------------")
+            print("Font Family name - [\(familyName)]")
+            let names = UIFont.fontNames(forFamilyName: familyName)
+            print("font names -> [\(names)]")
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
         }
     }
 }
