@@ -6,8 +6,10 @@
   
 */
 
-// Fonts
-"font.Lato.regular" = "Lato-Regular";
-"font.Lato.bold" = "Lato-Bold";
-"font.Lato.extraBold" = "Lato-ExtraBold";
-"font.Inter.bold" = "Inter-Bold";
+"Color.darkBlue" = "2345BF";
+"Color.orange" = "FF642F";
+
+"Font.Lato.regular" = "Lato-Regular";
+"Font.Lato.bold" = "Lato-Bold";
+"Font.Lato.extraBold" = "Lato-ExtraBold";
+"Font.Inter.bold" = "Inter-Bold";

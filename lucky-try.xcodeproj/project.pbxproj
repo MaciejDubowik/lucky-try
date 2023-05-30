@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E13B9A52A23FA5100023D14 /* LuckyTry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13B9A42A23FA5100023D14 /* LuckyTry.swift */; };
-		0E13B9A72A23FA5100023D14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13B9A62A23FA5100023D14 /* ContentView.swift */; };
 		0E13B9A92A23FA5300023D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E13B9A82A23FA5300023D14 /* Assets.xcassets */; };
 		0E13B9AC2A23FA5300023D14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E13B9AB2A23FA5300023D14 /* Preview Assets.xcassets */; };
 		0E13B9B62A23FA5300023D14 /* LuckyTryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E13B9B52A23FA5300023D14 /* LuckyTryTests.swift */; };
@@ -44,7 +43,6 @@
 /* Begin PBXFileReference section */
 		0E13B9A12A23FA5100023D14 /* lucky-try.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lucky-try.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E13B9A42A23FA5100023D14 /* LuckyTry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyTry.swift; sourceTree = "<group>"; };
-		0E13B9A62A23FA5100023D14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E13B9A82A23FA5300023D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E13B9AB2A23FA5300023D14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E13B9B12A23FA5300023D14 /* lucky-tryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lucky-tryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +112,6 @@
 				0E13B9DB2A25164600023D14 /* Screens */,
 				0E13B9DA2A25163E00023D14 /* Helpers */,
 				0E3CB4B82A2534B600485481 /* Fonts */,
-				0E13B9A62A23FA5100023D14 /* ContentView.swift */,
 				0E13B9A42A23FA5100023D14 /* LuckyTry.swift */,
 				0E13B9A82A23FA5300023D14 /* Assets.xcassets */,
 				0E13BA052A252D3000023D14 /* Info.plist */,
@@ -515,7 +512,6 @@
 			files = (
 				0E3CB4C22A25506300485481 /* Strings+Generated.swift in Sources */,
 				0E13B9F72A2527BF00023D14 /* StartView.swift in Sources */,
-				0E13B9A72A23FA5100023D14 /* ContentView.swift in Sources */,
 				0E13B9F92A25298300023D14 /* Color+Hex.swift in Sources */,
 				0E13B9A52A23FA5100023D14 /* LuckyTry.swift in Sources */,
 			);

@@ -10,21 +10,27 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum S {
+  internal enum Color {
+    /// Localizable.strings
+    ///   lucky-try
+    /// 
+    ///   Created by Maciej Dubowik on 29/05/2023.
+    internal static let darkBlue = S.tr("Localizable", "Color.darkBlue", fallback: "2345BF")
+    /// FF642F
+    internal static let orange = S.tr("Localizable", "Color.orange", fallback: "FF642F")
+  }
   internal enum Font {
     internal enum Inter {
       /// Inter-Bold
-      internal static let bold = S.tr("Localizable", "font.Inter.bold", fallback: "Inter-Bold")
+      internal static let bold = S.tr("Localizable", "Font.Inter.bold", fallback: "Inter-Bold")
     }
     internal enum Lato {
       /// Lato-Bold
-      internal static let bold = S.tr("Localizable", "font.Lato.bold", fallback: "Lato-Bold")
+      internal static let bold = S.tr("Localizable", "Font.Lato.bold", fallback: "Lato-Bold")
       /// Lato-ExtraBold
-      internal static let extraBold = S.tr("Localizable", "font.Lato.extraBold", fallback: "Lato-ExtraBold")
-      /// Localizable.strings
-      ///   lucky-try
-      /// 
-      ///   Created by Maciej Dubowik on 29/05/2023.
-      internal static let regular = S.tr("Localizable", "font.Lato.regular", fallback: "Lato-Regular")
+      internal static let extraBold = S.tr("Localizable", "Font.Lato.extraBold", fallback: "Lato-ExtraBold")
+      /// Lato-Regular
+      internal static let regular = S.tr("Localizable", "Font.Lato.regular", fallback: "Lato-Regular")
     }
   }
 }
