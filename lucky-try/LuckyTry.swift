@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct LuckyTry: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SettingsView()
         }
     }
 }

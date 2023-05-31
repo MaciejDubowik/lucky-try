@@ -4,7 +4,7 @@ excluded:
   - Pods
   - lucky-tryUITests/LuckyTryUITests.swift
   - lucky-tryTests/LuckyTryTests.swift
-
+  - lucky-try/Helpers/Color+Hex.swift
 # Rules
 
 # Emit a warning if a line of code exceeds 120 characters

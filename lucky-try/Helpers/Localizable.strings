@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  lucky-try
+
+  Created by Maciej Dubowik on 29/05/2023.
+  
+*/
+
+"Color.darkBlue" = "2345BF";
+"Color.orange" = "FF642F";
+
+"Font.Lato.regular" = "Lato-Regular";
+"Font.Lato.bold" = "Lato-Bold";
+"Font.Lato.extraBold" = "Lato-ExtraBold";
+"Font.Inter.bold" = "Inter-Bold";
