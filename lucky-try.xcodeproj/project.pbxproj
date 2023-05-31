@@ -23,6 +23,7 @@
 		0E3CB4C22A25506300485481 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4C12A25506300485481 /* Strings+Generated.swift */; };
 		0E3CB4CB2A275FDD00485481 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4CA2A275FDD00485481 /* SettingsView.swift */; };
 		0E3CB4CD2A27769700485481 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4CC2A27769700485481 /* View+RoundedCorner.swift */; };
+		0E3CB4CF2A27956600485481 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4CE2A27956600485481 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		0E3CB4C12A25506300485481 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		0E3CB4CA2A275FDD00485481 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		0E3CB4CC2A27769700485481 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
+		0E3CB4CE2A27956600485481 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +305,7 @@
 		0E13B9F12A25176700023D14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0E3CB4CE2A27956600485481 /* Settings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				0E13B9F72A2527BF00023D14 /* StartView.swift in Sources */,
 				0E13B9F92A25298300023D14 /* Color+Hex.swift in Sources */,
 				0E3CB4CD2A27769700485481 /* View+RoundedCorner.swift in Sources */,
+				0E3CB4CF2A27956600485481 /* Settings.swift in Sources */,
 				0E3CB4CB2A275FDD00485481 /* SettingsView.swift in Sources */,
 				0E13B9A52A23FA5100023D14 /* LuckyTry.swift in Sources */,
 			);
