@@ -25,6 +25,8 @@
 		0E3CB4CD2A27769700485481 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4CC2A27769700485481 /* View+RoundedCorner.swift */; };
 		0E3CB4D12A27962900485481 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4D02A27962900485481 /* SettingsViewModel.swift */; };
 		0E3CB4D32A27A1E600485481 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4D22A27A1E600485481 /* Settings.swift */; };
+		0E3CB4D52A27FCD900485481 /* FlipCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4D42A27FCD900485481 /* FlipCoinView.swift */; };
+		0E3CB4D72A27FF1B00485481 /* FlipCoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4D62A27FF1B00485481 /* FlipCoinViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		0E3CB4CC2A27769700485481 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
 		0E3CB4D02A27962900485481 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		0E3CB4D22A27A1E600485481 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0E3CB4D42A27FCD900485481 /* FlipCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCoinView.swift; sourceTree = "<group>"; };
+		0E3CB4D62A27FF1B00485481 /* FlipCoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCoinViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +275,7 @@
 		0E13B9EC2A25174C00023D14 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0E3CB4D62A27FF1B00485481 /* FlipCoinViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 		0E13B9ED2A25175200023D14 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E3CB4D42A27FCD900485481 /* FlipCoinView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,12 +529,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E3CB4C22A25506300485481 /* Strings+Generated.swift in Sources */,
+				0E3CB4D52A27FCD900485481 /* FlipCoinView.swift in Sources */,
 				0E13B9F72A2527BF00023D14 /* StartView.swift in Sources */,
 				0E13B9F92A25298300023D14 /* Color+Hex.swift in Sources */,
 				0E3CB4CD2A27769700485481 /* View+RoundedCorner.swift in Sources */,
 				0E3CB4CB2A275FDD00485481 /* SettingsView.swift in Sources */,
 				0E3CB4D32A27A1E600485481 /* Settings.swift in Sources */,
 				0E13B9A52A23FA5100023D14 /* LuckyTry.swift in Sources */,
+				0E3CB4D72A27FF1B00485481 /* FlipCoinViewModel.swift in Sources */,
 				0E3CB4D12A27962900485481 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
