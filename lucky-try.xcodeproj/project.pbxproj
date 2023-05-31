@@ -21,6 +21,8 @@
 		0E3CB4BE2A254A5200485481 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E3CB4BD2A254A5200485481 /* Lato-Regular.ttf */; };
 		0E3CB4C02A254F0400485481 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E3CB4BF2A254F0400485481 /* Localizable.strings */; };
 		0E3CB4C22A25506300485481 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4C12A25506300485481 /* Strings+Generated.swift */; };
+		0E3CB4CB2A275FDD00485481 /* CreateGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4CA2A275FDD00485481 /* CreateGameView.swift */; };
+		0E3CB4CD2A27769700485481 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3CB4CC2A27769700485481 /* View+RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		0E3CB4BD2A254A5200485481 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		0E3CB4BF2A254F0400485481 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0E3CB4C12A25506300485481 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		0E3CB4CA2A275FDD00485481 /* CreateGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameView.swift; sourceTree = "<group>"; };
+		0E3CB4CC2A27769700485481 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 				0E13B9F82A25298300023D14 /* Color+Hex.swift */,
 				0E3CB4C12A25506300485481 /* Strings+Generated.swift */,
 				0E3CB4BF2A254F0400485481 /* Localizable.strings */,
+				0E3CB4CC2A27769700485481 /* View+RoundedCorner.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 		0E13B9F02A25176100023D14 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E3CB4CA2A275FDD00485481 /* CreateGameView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,6 +519,8 @@
 				0E3CB4C22A25506300485481 /* Strings+Generated.swift in Sources */,
 				0E13B9F72A2527BF00023D14 /* StartView.swift in Sources */,
 				0E13B9F92A25298300023D14 /* Color+Hex.swift in Sources */,
+				0E3CB4CD2A27769700485481 /* View+RoundedCorner.swift in Sources */,
+				0E3CB4CB2A275FDD00485481 /* CreateGameView.swift in Sources */,
 				0E13B9A52A23FA5100023D14 /* LuckyTry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

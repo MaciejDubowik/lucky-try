@@ -12,7 +12,7 @@ struct LuckyTry: App {
 
     var body: some Scene {
         WindowGroup {
-            StartView()
+            CreateGameView()
         }
     }
 }
