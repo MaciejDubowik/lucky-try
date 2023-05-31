@@ -68,8 +68,11 @@ struct SettingsView: View {
 
             HStack(spacing: 0) {
                 Button(action: {
-                    print("go back")
-                    self.presentationMode.wrappedValue.dismiss()
+                    if viewModel.step == 1 {
+                        self.presentationMode.wrappedValue.dismiss()
+                    } else {
+                        viewModel.previousStep()
+                    }
                 }, label: {
 
                     Text("Back")

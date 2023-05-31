@@ -19,24 +19,48 @@ class SettingsViewModel: ObservableObject {
         case 1:
             title = "Player 1 name is..."
             progressBar += (33.33/Double(settings.numberOfPlayers))
-            print(progressBar)
             step = 2
         case 2:
             if counter < settings.numberOfPlayers {
                 counter += 1
                 title = "Player \(counter) name is..."
                 progressBar += (33.33/Double(settings.numberOfPlayers))
-                print(progressBar)
             } else {
                 title = "What is the bet?"
                 progressBar = 100.0
                 step = 3
             }
-
         case 3:
             print("number of players- \(settings.numberOfPlayers)")
             print("players - \(settings.playersNames)")
             print("bet - \(settings.bet)")
+        default:
+            print("error")
+        }
+    }
+
+    func previousStep() {
+        switch step {
+        case 1:
+            step = 1
+        case 2:
+            print("number of players- \(settings.numberOfPlayers)")
+            print("players - \(settings.playersNames)")
+            print("bet - \(settings.bet)")
+            if 1 < counter {
+                counter -= 1
+                title = "Player \(counter) name is..."
+                progressBar -= (33.33/Double(settings.numberOfPlayers))
+                settings.playersNames.removeLast()
+            } else {
+                title = "How many players will play?"
+                progressBar = 0
+                step = 1
+            }
+        case 3:
+            title = "Player \(counter) name is..."
+            settings.playersNames.removeLast()
+            step = 2
         default:
             print("error")
         }
