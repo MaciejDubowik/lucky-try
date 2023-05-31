@@ -12,6 +12,7 @@ struct SettingsView: View {
     private var step: Int = 1
     private var setupProgress = 33.3
     @State private var selectedItem = 2
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     var body: some View {
         VStack {
@@ -43,7 +44,9 @@ struct SettingsView: View {
             HStack(spacing: 0) {
                 Button(action: {
                     print("go back")
+                    self.presentationMode.wrappedValue.dismiss()
                 }, label: {
+
                     Text("Back")
                         .font(.custom(S.Font.Lato.bold, size: 18))
                         .underline()
@@ -66,7 +69,10 @@ struct SettingsView: View {
                         .roundedCorner(30, corners: .topLeft)
                 })
             }
-        }.ignoresSafeArea(.container, edges: .bottom)
+        }
+        .ignoresSafeArea(.container, edges: .bottom)
+        .navigationBarBackButtonHidden(true)
+
     }
 }
 
