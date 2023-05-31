@@ -9,37 +9,62 @@ import SwiftUI
 
 struct SettingsView: View {
 
-    private var step: Int = 1
-    private var setupProgress = 33.3
+    @StateObject var viewModel = SettingsViewModel()
     @State private var selectedItem = 2
+    @State private var name: String = ""
+    @State private var bet: String = ""
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     var body: some View {
         VStack {
-            Text("Step \(step)")
+// MARK: - Top
+
+            Text("Step \(viewModel.step)")
                 .font(.custom(S.Font.Lato.bold, size: 18))
                 .padding(.top, 40)
 
-            ProgressView(value: setupProgress, total: 100)
+            ProgressView(value: viewModel.progressBar, total: 100)
                 .progressViewStyle(LinearProgressViewStyle(tint: Color(hex: S.Color.darkBlue)))
                 .scaleEffect(x: 1, y: 2)
                 .padding(.horizontal, 40)
                 .padding(.top, 20)
 
-            Text("How many players will play?")
+            Text(viewModel.title)
                 .font(.custom(S.Font.Lato.extraBold, size: 24))
                 .padding(.top, 30)
+                .textFieldStyle(.roundedBorder)
 
-            Picker("Number of players:", selection: $selectedItem) {
-                ForEach(2...4, id: \.self) { value in
-                    Text("\(value)")
+// MARK: - Content
+
+            switch viewModel.step {
+            case 1:
+                Picker("Number of players:", selection: $selectedItem) {
+                    ForEach(2...3, id: \.self) { value in
+                        Text("\(value)")
+                    }
                 }
+                .pickerStyle(WheelPickerStyle())
+                .labelsHidden()
+                .padding()
+            case 2:
+                TextField("", text: $name)
+                    .padding(.all, 10)
+                    .background(RoundedRectangle(cornerRadius: 10).stroke(Color(hex: "E5E5E5"), lineWidth: 2))
+                    .padding(.horizontal, 40)
+                    .padding(.top, 20)
+            case 3:
+                TextField("Bet", text: $bet)
+                    .padding(.all, 10)
+                    .background(RoundedRectangle(cornerRadius: 10).stroke(Color(hex: "E5E5E5"), lineWidth: 2))
+                    .padding(.horizontal, 40)
+                    .padding(.top, 20)
+            default:
+                TextField("Name", text: $name)
             }
-            .pickerStyle(WheelPickerStyle())
-            .labelsHidden()
-            .padding()
 
             Spacer()
+
+// MARK: - Navbar
 
             HStack(spacing: 0) {
                 Button(action: {
@@ -57,7 +82,17 @@ struct SettingsView: View {
                 })
 
                 Button(action: {
-                    print("go next")
+                    switch viewModel.step {
+                    case 1:
+                        viewModel.settings.numberOfPlayers = selectedItem
+                    case 2:
+                        viewModel.settings.playersNames.append(name)
+                        name = ""
+                    default:
+                        viewModel.settings.bet = bet
+                    }
+                    viewModel.nextStep()
+
                 }, label: {
                     Text("Next")
                         .font(.custom(S.Font.Lato.bold, size: 18))

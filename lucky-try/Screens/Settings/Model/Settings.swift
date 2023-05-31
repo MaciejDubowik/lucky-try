@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Settings {
-    var numberOfPlayers: Int
-    var names: [String]
-    var bet: String
+class Settings {
+    var numberOfPlayers: Int = 2
+    var playersNames: [String] = []
+    var bet: String  = ""
 }

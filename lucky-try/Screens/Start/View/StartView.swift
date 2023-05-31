@@ -32,7 +32,7 @@ struct StartView: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: 100)
                         .foregroundColor(.white)
-                        .background(Color.orange)
+                        .background(Color(hex: S.Color.orange))
                 })
                 .padding(.bottom)
             }
