@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CreateGameView: View {
+struct SettingsView: View {
 
     private var step: Int = 1
     private var setupProgress = 33.3
@@ -72,6 +72,6 @@ struct CreateGameView: View {
 
 struct CreateGameView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateGameView()
+        SettingsView()
     }
 }
