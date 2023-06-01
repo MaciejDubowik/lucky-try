@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct SettingsView: View {
-
     @StateObject var viewModel = SettingsViewModel()
     @State private var selectedItem = 2
     @State private var name: String = ""
     @State private var bet: String = ""
-    @State private var isNavigationActive = false // <- nowa zmienna
+    @State private var isNavigationActive = false
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Binding var originalIsActive: Bool
 
     var body: some View {
         VStack {
@@ -34,7 +34,6 @@ struct SettingsView: View {
                 .font(.custom(S.Font.Lato.extraBold, size: 24))
                 .padding(.top, 30)
                 .textFieldStyle(.roundedBorder)
-
 
 // MARK: - Content
 
@@ -66,10 +65,9 @@ struct SettingsView: View {
 
             Spacer()
 
-
 // MARK: - Navbar
 
-            NavigationLink(destination: FlipCoinView(), isActive: $isNavigationActive) {
+            NavigationLink(destination: FlipCoinView(originalIsActive: $originalIsActive).environmentObject(viewModel), isActive: $isNavigationActive) {
                 EmptyView()
             }
 
@@ -94,12 +92,12 @@ struct SettingsView: View {
                 Button(action: {
                     switch viewModel.step {
                     case 1:
-                        viewModel.settings.numberOfPlayers = selectedItem
+                        viewModel.updateNumberOfPlayers(selectedItem)
                     case 2:
-                        viewModel.settings.playersNames.append(name)
+                        viewModel.appendPlayerName(name)
                         name = ""
                     case 3:
-                        viewModel.settings.bet = bet
+                        viewModel.updateBet(bet)
                         isNavigationActive = true
                     default:
                         print("error")
@@ -120,12 +118,6 @@ struct SettingsView: View {
         }
         .ignoresSafeArea(.container, edges: .bottom)
         .navigationBarBackButtonHidden(true)
-
     }
 }
 
-struct CreateGameView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-    }
-}

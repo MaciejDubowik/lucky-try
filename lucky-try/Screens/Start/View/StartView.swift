@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StartView: View {
+    @State var originalIsActive = false
     var body: some View {
         NavigationView {
             VStack {
@@ -24,8 +25,8 @@ struct StartView: View {
 
                 Spacer()
 
-                NavigationLink(destination: {
-                    SettingsView()
+                NavigationLink(isActive: $originalIsActive , destination: {
+                    SettingsView(originalIsActive: $originalIsActive)
                 }, label: {
                     Text("Click here to start")
                         .font(.custom(S.Font.Lato.bold, size: 18))

@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct FlipCoinView: View {
-    let viewModel = FlipCoinViewModel()
-    
+    @EnvironmentObject var settingsViewModel: SettingsViewModel
+    @Binding var originalIsActive: Bool
+
     var body: some View {
         NavigationView {
             VStack {
 
-                VStack{
-                    Text("2 Players")
+                VStack {
+                    Text("\(settingsViewModel.settings.numberOfPlayers) Players")
                         .font(.custom(S.Font.Lato.bold, size: 24))
                         .frame(maxWidth: .infinity, alignment: .bottomLeading)
-                    Text("Bet: ")
+                    Text("Bet: \(settingsViewModel.settings.bet)")
                         .font(.custom(S.Font.Lato.regular, size: 24))
                         .frame(maxWidth: .infinity, alignment: .bottomLeading)
                 }
@@ -37,11 +38,11 @@ struct FlipCoinView: View {
 
                 Spacer()
 
-                VStack{
-                    Text("1. Player1")
+                VStack {
+                    Text("1. \(S.name1)")
                         .font(.custom(S.Font.Lato.regular, size: 24))
                         .frame(maxWidth: .infinity, alignment: .bottomLeading)
-                    Text("2. Player2")
+                    Text("2. \(S.name2)")
                         .font(.custom(S.Font.Lato.regular, size: 24))
                         .frame(maxWidth: .infinity, alignment: .bottomLeading)
                         .padding(.top, 1)
@@ -51,8 +52,8 @@ struct FlipCoinView: View {
 
                 Spacer()
 
-                NavigationLink(destination: {
-                    StartView()
+                Button(action: {
+                    originalIsActive = false
                 }, label: {
                     Text("Click here to start")
                         .font(.custom(S.Font.Lato.bold, size: 18))
@@ -65,11 +66,5 @@ struct FlipCoinView: View {
             }
             .ignoresSafeArea(.container, edges: .bottom)
         }
-    }
-}
-
-struct FlipCoinView_Previews: PreviewProvider {
-    static var previews: some View {
-        FlipCoinView()
     }
 }

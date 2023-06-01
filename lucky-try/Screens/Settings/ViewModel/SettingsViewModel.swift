@@ -10,9 +10,21 @@ import SwiftUI
 class SettingsViewModel: ObservableObject {
     @Published var title: String = "How many players will play?"
     @Published var progressBar: Double = 33.33
-    var settings = Settings()
+    @Published var settings = Settings()
     var step: Int = 1
     var counter: Int = 1
+
+    func updateNumberOfPlayers(_ number: Int) {
+        settings.numberOfPlayers = number
+    }
+
+    func appendPlayerName(_ name: String) {
+        settings.playersNames.append(name)
+    }
+
+    func updateBet(_ bet: String) {
+        settings.bet = bet
+    }
 
     func nextStep() {
         switch step {

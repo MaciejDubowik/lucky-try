@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Settings {
-    var numberOfPlayers: Int = 2
-    var playersNames: [String] = []
-    var bet: String  = ""
+class Settings: ObservableObject {
+    @Published var numberOfPlayers: Int = 2
+    @Published var playersNames: [String] = []
+    @Published var bet: String  = ""
 }

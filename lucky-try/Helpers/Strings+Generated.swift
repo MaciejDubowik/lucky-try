@@ -10,6 +10,12 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum S {
+  /// settingsViewModel.settings.playersNames[0]
+  internal static let name1 = S.tr("Localizable", "name1", fallback: "settingsViewModel.settings.playersNames[0]")
+  /// settingsViewModel.settings.playersNames[1]
+  internal static let name2 = S.tr("Localizable", "name2", fallback: "settingsViewModel.settings.playersNames[1]")
+  /// settingsViewModel.settings.playersNames[2]
+  internal static let name3 = S.tr("Localizable", "name3", fallback: "settingsViewModel.settings.playersNames[2]")
   internal enum Color {
     /// Localizable.strings
     ///   lucky-try

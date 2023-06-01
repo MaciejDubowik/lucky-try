@@ -8,7 +8,11 @@
 import SwiftUI
 
 class FlipCoinViewModel {
-    let settings = Settings()
+    @Published var settings: Settings
+
+    init(settings: Settings) {
+        self.settings = settings
+    }
 
     func click() {
         print("")

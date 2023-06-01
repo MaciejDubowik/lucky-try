@@ -13,3 +13,7 @@
 "Font.Lato.bold" = "Lato-Bold";
 "Font.Lato.extraBold" = "Lato-ExtraBold";
 "Font.Inter.bold" = "Inter-Bold";
+
+"name1" = "settingsViewModel.settings.playersNames[0]";
+"name2" = "settingsViewModel.settings.playersNames[1]";
+"name3" = "settingsViewModel.settings.playersNames[2]";
