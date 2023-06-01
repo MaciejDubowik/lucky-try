@@ -13,6 +13,7 @@ struct SettingsView: View {
     @State private var selectedItem = 2
     @State private var name: String = ""
     @State private var bet: String = ""
+    @State private var isNavigationActive = false // <- nowa zmienna
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     var body: some View {
@@ -33,6 +34,7 @@ struct SettingsView: View {
                 .font(.custom(S.Font.Lato.extraBold, size: 24))
                 .padding(.top, 30)
                 .textFieldStyle(.roundedBorder)
+
 
 // MARK: - Content
 
@@ -64,7 +66,12 @@ struct SettingsView: View {
 
             Spacer()
 
+
 // MARK: - Navbar
+
+            NavigationLink(destination: FlipCoinView(), isActive: $isNavigationActive) {
+                EmptyView()
+            }
 
             HStack(spacing: 0) {
                 Button(action: {
@@ -91,8 +98,11 @@ struct SettingsView: View {
                     case 2:
                         viewModel.settings.playersNames.append(name)
                         name = ""
-                    default:
+                    case 3:
                         viewModel.settings.bet = bet
+                        isNavigationActive = true
+                    default:
+                        print("error")
                     }
                     viewModel.nextStep()
 

@@ -34,6 +34,7 @@ class SettingsViewModel: ObservableObject {
             print("number of players- \(settings.numberOfPlayers)")
             print("players - \(settings.playersNames)")
             print("bet - \(settings.bet)")
+            print(settings)
         default:
             print("error")
         }
