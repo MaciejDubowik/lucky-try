@@ -57,9 +57,6 @@ class SettingsViewModel: ObservableObject {
         case 1:
             step = 1
         case 2:
-            print("number of players- \(settings.numberOfPlayers)")
-            print("players - \(settings.playersNames)")
-            print("bet - \(settings.bet)")
             if 1 < counter {
                 counter -= 1
                 title = "Player \(counter) name is..."

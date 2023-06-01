@@ -174,30 +174,8 @@
 				0E13B9E02A2516C100023D14 /* Start */,
 				0E13B9DF2A2516BB00023D14 /* Settings */,
 				0E13B9DE2A25166000023D14 /* Flip Coin */,
-				0E13B9DD2A25165900023D14 /* Cups */,
-				0E13B9DC2A25165000023D14 /* Wheel */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		0E13B9DC2A25165000023D14 /* Wheel */ = {
-			isa = PBXGroup;
-			children = (
-				0E13B9E82A25173B00023D14 /* Model */,
-				0E13B9E72A25173800023D14 /* View */,
-				0E13B9E62A25173200023D14 /* ViewModel */,
-			);
-			path = Wheel;
-			sourceTree = "<group>";
-		};
-		0E13B9DD2A25165900023D14 /* Cups */ = {
-			isa = PBXGroup;
-			children = (
-				0E13B9EB2A25174700023D14 /* Model */,
-				0E13B9EA2A25174400023D14 /* View */,
-				0E13B9E92A25173F00023D14 /* ViewModel */,
-			);
-			path = Cups;
 			sourceTree = "<group>";
 		};
 		0E13B9DE2A25166000023D14 /* Flip Coin */ = {
@@ -228,48 +206,6 @@
 				0E13B9F22A25176B00023D14 /* ViewModel */,
 			);
 			path = Start;
-			sourceTree = "<group>";
-		};
-		0E13B9E62A25173200023D14 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		0E13B9E72A25173800023D14 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0E13B9E82A25173B00023D14 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0E13B9E92A25173F00023D14 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		0E13B9EA2A25174400023D14 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0E13B9EB2A25174700023D14 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0E13B9EC2A25174C00023D14 /* ViewModel */ = {

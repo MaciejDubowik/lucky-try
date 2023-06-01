@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct FlipCoinView: View {
+    @State private var rotationDegrees: Double = 0
+    @State private var flip: Bool = false
     @EnvironmentObject var settingsViewModel: SettingsViewModel
     @Binding var originalIsActive: Bool
 
     var body: some View {
+        let flipCoinViewModel = FlipCoinViewModel()
+        var winner = flipCoinViewModel.getWinner(numberOfPlayers: settingsViewModel.settings.numberOfPlayers)
+
         NavigationView {
             VStack {
 
@@ -26,36 +31,39 @@ struct FlipCoinView: View {
                 .padding(.top, 40)
                 .padding(.horizontal, 30)
 
-                ZStack {
-                    Circle()
-                        .frame(width: 200)
-                        .foregroundColor(Color(hex: S.Color.darkBlue))
+                Spacer()
 
-                    Text("1")
-                        .font(.custom(S.Font.Lato.bold, size: 80))
-                        .foregroundColor(.white)
-                }.padding(.top, 50)
+                Button {
+                     withAnimation {
+                         rotationDegrees += 360
+                         flip.toggle()
+                     }
+                 } label: {
+                     ZStack {
+                         Circle()
+                             .frame(width: 200)
+                             .foregroundColor(Color(hex: S.Color.darkBlue))
+                             .rotation3DEffect(.degrees(rotationDegrees), axis: (x: 0, y: 1, z: 0))
+                         Text(flip ? "\(winner)" : "Click here to start")
+                             .font(.custom(S.Font.Lato.bold, size: 20))
+                             .foregroundColor(.white)
+                             .rotation3DEffect(.degrees(rotationDegrees), axis: (x: 0, y: 1, z: 0))
+                     }
+                 }
 
                 Spacer()
 
-                VStack {
-                    Text("1. \(S.name1)")
-                        .font(.custom(S.Font.Lato.regular, size: 24))
-                        .frame(maxWidth: .infinity, alignment: .bottomLeading)
-                    Text("2. \(S.name2)")
-                        .font(.custom(S.Font.Lato.regular, size: 24))
-                        .frame(maxWidth: .infinity, alignment: .bottomLeading)
-                        .padding(.top, 1)
+                if flip {
+                    Text("\(settingsViewModel.settings.playersNames[winner-1]) wins!")
+                        .font(.custom(S.Font.Lato.extraBold, size: 24))
                 }
-                .padding(.top, 40)
-                .padding(.horizontal, 30)
 
                 Spacer()
 
                 Button(action: {
                     originalIsActive = false
                 }, label: {
-                    Text("Click here to start")
+                    Text("New game")
                         .font(.custom(S.Font.Lato.bold, size: 18))
                         .frame(maxWidth: .infinity)
                         .frame(height: 100)

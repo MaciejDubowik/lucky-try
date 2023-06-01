@@ -40,7 +40,7 @@ struct SettingsView: View {
             switch viewModel.step {
             case 1:
                 Picker("Number of players:", selection: $selectedItem) {
-                    ForEach(2...3, id: \.self) { value in
+                    ForEach(2...10, id: \.self) { value in
                         Text("\(value)")
                     }
                 }
@@ -120,4 +120,3 @@ struct SettingsView: View {
         .navigationBarBackButtonHidden(true)
     }
 }
-

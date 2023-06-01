@@ -8,17 +8,7 @@
 import SwiftUI
 
 class FlipCoinViewModel {
-    @Published var settings: Settings
-
-    init(settings: Settings) {
-        self.settings = settings
+    func getWinner(numberOfPlayers: Int) -> Int {
+        return Int.random(in: 1...numberOfPlayers)
     }
-
-    func click() {
-        print("")
-        print("number of players- \(settings.numberOfPlayers)")
-        print("players - \(settings.playersNames)")
-        print("bet - \(settings.bet)")
-    }
-    
 }
