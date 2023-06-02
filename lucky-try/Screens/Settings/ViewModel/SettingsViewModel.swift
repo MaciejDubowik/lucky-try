@@ -42,11 +42,6 @@ class SettingsViewModel: ObservableObject {
                 progressBar = 100.0
                 step = 3
             }
-        case 3:
-            print("number of players- \(settings.numberOfPlayers)")
-            print("players - \(settings.playersNames)")
-            print("bet - \(settings.bet)")
-            print(settings)
         default:
             print("error")
         }

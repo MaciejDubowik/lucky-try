@@ -48,7 +48,7 @@ struct SettingsView: View {
                 .labelsHidden()
                 .padding()
             case 2:
-                TextField("", text: $name)
+                TextField("Name", text: $name)
                     .padding(.all, 10)
                     .background(RoundedRectangle(cornerRadius: 10).stroke(Color(hex: "E5E5E5"), lineWidth: 2))
                     .padding(.horizontal, 40)
@@ -100,7 +100,7 @@ struct SettingsView: View {
                         viewModel.updateBet(bet)
                         isNavigationActive = true
                     default:
-                        print("error")
+                        print("Navigation button error")
                     }
                     viewModel.nextStep()
 
