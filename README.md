@@ -8,7 +8,7 @@ The primary objective behind the development of "Lucky Try" was to learn and gai
   
 By working on this project, I aimed to understand SwiftUI's functionalities, benefits, and limitations.
 
-##Tech Stack
+## Tech Stack
 - SwiftUI
 - SwiftLint
 - SwiftGen
